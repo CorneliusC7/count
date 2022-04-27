@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("May 22, 2022 00:06:00").getTime();
+var countDownDate = new Date("May 23, 2022 00:06:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -41,5 +41,8 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "COUNTDOWN FINISHED";
+    setTimeout(function(){
+      open('https://support.zoom.us/hc/en-us/articles/201362983-How-to-uninstall-Zoom', '_self')
+    },3000)
   }
 }, 20);
