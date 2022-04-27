@@ -17,7 +17,7 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   var percent = 100 - (100 * (distance / thirtyday))
-  document.getElementById('idk').innerHTML = (percent.toString().slice(0,8)+"%")
+  document.getElementById('idk').innerHTML = (percent.toString().slice(0,7)+"%")
   document.getElementById('idk').style.width = (percent)+"%"
   document.getElementById('idk').setAttribute("aria-valuenow", parseFloat(percent))
   if (percent <= 10 & percent > 0){
@@ -31,7 +31,6 @@ var x = setInterval(function() {
   }else if(percent > 75 & percent <= 100){
     document.getElementById('idk').className = "progress-bar progress-bar-striped bg-danger";
   }
-  
 
   // Display the result in the element with id="demo"
   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
