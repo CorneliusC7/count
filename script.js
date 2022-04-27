@@ -45,4 +45,4 @@ var x = setInterval(function() {
       open('https://support.zoom.us/hc/en-us/articles/201362983-How-to-uninstall-Zoom', '_self')
     },3000)
   }
-}, 20);
+}, 30);
