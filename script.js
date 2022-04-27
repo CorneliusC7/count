@@ -17,7 +17,7 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   var percent = 100 - (100 * (distance / thirtyday))
-  document.getElementById('idk').innerHTML = (percent.toString().slice(0,6)+"%")
+  document.getElementById('idk').innerHTML = (percent.toString().slice(0,8)+"%")
   document.getElementById('idk').style.width = (percent)+"%"
   document.getElementById('idk').setAttribute("aria-valuenow", parseFloat(percent))
   if (percent <= 10 & percent > 0){
