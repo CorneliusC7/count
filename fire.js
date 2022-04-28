@@ -32,5 +32,5 @@ function q(qry){
 onChildAdded(query(dbRef), (snapshot) => {
     console.log("child added");
     console.log(snapshot.val().content); // Logs newly added child
-    q('.sibotak').innerHTML += snapshot.val().content
+    q('#sibotak').innerHTML += snapshot.val().content
 });
