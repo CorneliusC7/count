@@ -13,9 +13,11 @@
     <div class="box">
         <h1>Post to Board</h1>
         <hr>
+        <button class="btn btn-outline-secondary" type="button" onclick="h1()">h1</button>
+        <button class="btn btn-outline-secondary" type="button" onclick="h2()">h2</button>
+        <button class="btn btn-outline-secondary" type="button" onclick="img()">img</button>
+        <button class="btn btn-outline-secondary" type="button" onclick="a()">a</button>
         <div class="input-group mb-3">
-            <button class="btn btn-outline-secondary" type="button" onclick="h1()">h1</button>
-            <button class="btn btn-outline-secondary" type="button" onclick="img()">img</button>
             <input type="text" class="form-control" id="contentPost" placeholder="Post here....." aria-label="Example text with two button addons">
         </div>
         <button id="postBtn" class="btn btn-primary">Post</button>
@@ -24,6 +26,21 @@
     <script>
         function h1(){
             $('#contentPost').val("<h1>"+ $('#contentPost').val() +"</h1>")
+        }
+        function h2(){
+            $('#contentPost').val("<h2>"+ $('#contentPost').val() +"</h2>")
+        }
+        function h3(){
+            $('#contentPost').val("<h3>"+ $('#contentPost').val() +"</h3>")
+        }
+        function h4(){
+            $('#contentPost').val("<h4>"+ $('#contentPost').val() +"</h4>")
+        }
+        function h5(){
+            $('#contentPost').val("<h5>"+ $('#contentPost').val() +"</h5>")
+        }
+        function img(){
+            $('#contentPost').val("<img src='"+ $('#contentPost').val() +"'>")
         }
         function img(){
             $('#contentPost').val("<img src='"+ $('#contentPost').val() +"'>")
@@ -36,7 +53,11 @@
         }
         .box{
             margin: auto;
+<<<<<<< HEAD
+            width: 94%;
+=======
             width: 90%;
+>>>>>>> c457ba13a8e6cdcdd1bfcc6c49c852917a1a277c
             margin-top: 10px;
             height: 50%;
             padding: 10px;
