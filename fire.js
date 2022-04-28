@@ -19,14 +19,15 @@ const app = initializeApp(firebaseConfig);
 
 const database = getDatabase(app);
 
+const dbRef = ref("board/")
+
 function writeUserData(subBoard, cont) {
     set(ref(database, 'board/' + Date.now()), {
         content: cont
     });
 }
-const dbRef = database.ref("board/")
 onChildAdded(query(dbRef), (snapshot) => {
     console.log("child added");
     console.log(snapshot.val()); // Logs newly added child
-  });
+});
   
