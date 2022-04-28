@@ -26,8 +26,12 @@ function writeUserData(subBoard, cont) {
         content: cont
     });
 }
+function q(qry){
+    return document.querySelector(qry)
+}
 onChildAdded(query(dbRef), (snapshot) => {
     console.log("child added");
     console.log(snapshot.val()); // Logs newly added child
+    q('.sibotak').innerHTML += snapshot.val()
 });
   
