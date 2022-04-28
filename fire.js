@@ -19,7 +19,7 @@ const app = initializeApp(firebaseConfig);
 
 const database = getDatabase(app);
 
-const dbRef = ref("board/")
+const dbRef = ref(database ,"board/")
 
 function writeUserData(subBoard, cont) {
     set(ref(database, 'board/' + Date.now()), {
