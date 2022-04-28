@@ -12,11 +12,24 @@
 <body>
     <div class="box">
         <h1>Post to Board</h1>
-        <hr>
-        <input type="text" class="contentPost">
+        <hr>>
+        <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary" type="button" onclick="h1()">h1</button>
+            <button class="btn btn-outline-secondary" type="button" onclick="img()">img</button>
+            <input type="text" class="form-control" id="contentPost" placeholder="Post here....." aria-label="Example text with two button addons">
+        </div>
+        <br>
         <button id="postBtn" class="btn btn-primary">Post</button>
     </div>
     <script src="/count/firePost.js" type="module"></script>
+    <script>
+        function h1(){
+            $('#contentPost').val("<h1>"+ $('#contentPost').val() +"</h1>")
+        }
+        function img(){
+            $('#contentPost').val("<img src='"+ $('#contentPost').val() +"'>")
+        }
+    </script>
     <style>
         *{
             padding: 0;
@@ -29,7 +42,6 @@
             height: 50%;
             padding: 10px;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            color: rgba(149, 157, 165, 0.2) ;
             border-radius: 10px;
         }
     </style>
