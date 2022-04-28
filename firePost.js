@@ -22,4 +22,5 @@ function writeBoard(cont) {
 }
 $('#postBtn').on('click', function(){
     writeBoard(document.querySelector('#contentPost').value)
+    $('#contentPost').val('')
 })
