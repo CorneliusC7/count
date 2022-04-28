@@ -24,7 +24,7 @@ function writeUserData(subBoard, cont) {
         content: cont
     });
 }
-const dbRef = ref("/board")
+const dbRef = ref("board/")
 onChildAdded(query(dbRef), (snapshot) => {
     console.log("child added");
     console.log(snapshot.val()); // Logs newly added child
