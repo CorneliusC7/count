@@ -20,3 +20,6 @@ function writeBoard(cont) {
         content: cont
     });
 }
+$('#postBtn').on('click', function(){
+    writeBoard(document.querySelector('.contentPost').value)
+})

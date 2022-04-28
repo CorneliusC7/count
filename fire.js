@@ -34,4 +34,3 @@ onChildAdded(query(dbRef), (snapshot) => {
     console.log(snapshot.val()); // Logs newly added child
     q('.sibotak').innerHTML += snapshot.val()
 });
-$('')
