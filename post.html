@@ -17,6 +17,7 @@
         <button class="btn btn-outline-secondary" type="button" onclick="h2()">h2</button>
         <button class="btn btn-outline-secondary" type="button" onclick="img()">img</button>
         <button class="btn btn-outline-secondary" type="button" onclick="a()">a</button>
+        <hr>
         <div class="input-group mb-3">
             <input type="text" class="form-control" id="contentPost" placeholder="Post here....." aria-label="Example text with two button addons">
         </div>
@@ -42,8 +43,8 @@
         function img(){
             $('#contentPost').val("<img src='"+ $('#contentPost').val() +"'>")
         }
-        function img(){
-            $('#contentPost').val("<img src='"+ $('#contentPost').val() +"'>")
+        function a(){
+            $('#contentPost').val("<a href='"+ $('#contentPost').val() +"'>"+$('#contentPost').val()+"</a>")
         }
     </script>
     <style>
@@ -53,7 +54,7 @@
         }
         .box{
             margin: auto;
-            width: 94%;
+            width: 98%;
             margin-top: 10px;
             height: 50%;
             padding: 10px;
